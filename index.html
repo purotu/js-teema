@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Ilmoittautumislomake</h1>
+    <form name="omaLomake" onsubmit="tarkista(event);">
+        <label for="nimi">Nimi</label><br>
+        <input onfocus="ohje(event)" onblur="ohje(event)" type="text" name="nimi">
+        <span id="nimiOhje"></span>
+        <br><br>
+        <label for="osoite">Osoite</label><br>
+        <input onfocus="ohje(event)" onblur="ohje(event)" type="text" name="osoite">
+        <span id="osoiteOhje"></span>
+        <br><br>
+        <label for="osoite">Sähköposti</label><br>
+        <input onfocus="ohje(event)" onblur="ohje(event)" type="text" name="email">
+        <span id="emailOhje"></span>
+        <br><br>
+        <label for="osoite">Ammatti</label><br>
+        <input onfocus="ohje(event)" onblur="ohje(event)" type="text" name="ammatti">
+        <span id="ammattiOhje"></span>
+        <br><br>
+        <button>Ilmoittaudu</button>
+    </form>
+    <script src="js/skript.js"></script> 
 </body>
 </html>
